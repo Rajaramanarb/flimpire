@@ -3,8 +3,10 @@ import React from 'react'
 const MovieCard = ({ movie }) => {
   return (
     < a
-      href={`https://www.imdb.com/title/${movie.imdbID}/`}
+      // href={`https://www.imdb.com/title/${movie.imdbID}/`}
+      href={`https://letterboxd.com/film/${movie.Title.toLowerCase().replace(/\s+/g, '-')}/`}
       target="_blank"
+      rel="noopener noreferrer"
     >
     <div className='movie'>
         <div>
